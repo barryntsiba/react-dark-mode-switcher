@@ -1,0 +1,54 @@
+/* https: //developer.mozilla.org/en-US/docs/Web/CSS/--* */
+
+@import-normalize;
+
+/* rest of app styles */
+
+/* in here we declare our css properties */
+/* light theme */
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;700&display=swap");
+
+body[data-theme="light"] {
+  --colors-primary: #e67e22;
+  --colors-background: white;
+  font-family: "Sora", sans-serif;
+}
+/* dark theme */
+body[data-theme="dark"] {
+  --colors-primary: #d35400;
+  --colors-background: black;
+  font-family: "Sora", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#dark-demo:hover {
+  -webkit-box-shadow: -1px 0px 7px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: -1px 0px 7px 4px rgba(192, 7, 7, 0.6);
+}
+
+/* baroude ntsiba flat-ui */
+:root {
+  --bn-blue: #3498db;
+  --bn-sea: #2980b9;
+  --bn-turquoise: #1abc9c;
+  --bn-success: #16a085;
+  --bn-warning: #f39c12;
+  --bn-danger: #c0392b;
+  --bn-light: #ecf0f1;
+  --bn-light-gray: #bdc3c7;
+  --bn-gray: #7f8c8d;
+  --bn-night: #2c3e50;
+  --bn-dark: #222;
+  --bs-font-sans-serif: "Sora", sans-serif;
+}
